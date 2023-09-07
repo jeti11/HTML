@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 사용하기2</title>
+</head>
+
+<body>
+    <div>
+        <!-- html 태그에는 2가지 방식의 태그가 존재함 -->
+        <!-- 블록 타입 태그 : 하나의 html 태그가 하나의 라인을 모두 사용-->
+        <!-- 인라인 타입 태그 : 하나의 라인에 여러개의 html 태그를 사용할 수 있음 -->
+    <p>블록 타입의 태그인 p 태그</p>
+    <p>블록 타입인 p태그 2번째</p><p>p태그 3개째...</p>
+
+    <a href="#">인라인 타입의 태그인 a태그 사용</a>
+    <a href="#">인라인 타입인 a태그 2번째</a>
+    <a href="#">a태그 3개째...</a>
+
+
+    </div>
+
+    <br><hr>
+
+    <div>
+        <h3>label 사용하기</h3>
+
+        <input type="text" id="input01"><br><br>
+
+        <label>사용자 이름 : </label>
+        <input type="text" id="input02">
+
+        <br><br>
+
+        <label for="input03">사용자 이름 : </label>
+        <input type="text" id="input03">
+
+        <br><br>
+    
+        <label>사용자 이름 :
+        <input type="text" id="input04">
+        </label>
+    </div>
+
+    <div>
+        <input type="text"><br>
+        <input type="text" value="기본값설정하기"><br>
+        <!-- placeholder : 힌트주는 글자가 입력되는 것-->
+        <input type="text" placeholder="이름을 입력하세요"><br>
+        <input type="text" maxlength="10" placeholder="10글자 까지만 입력 가능"><br>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 문자셋 : 컴퓨터에서 문자를 표현하기 위한 문자코드표, 현재는 UTF-8 방식 주로 사용 -->
+    <!--  UTF-8 : 가변 3~4 byte (한국어, 일본어, 한자 등)로 16을 기준으로 8많이 씀 -->
+    <!-- 유니코드 : 전세계의 모든 문자를 표현하기 위해서 통합으로 만든 코드 표 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형 웹(창 크기에 따른 형상 변화)을 구현하기 위해서 사용 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html0223-01</title>
+
+<style>
+    * {
+    box-sizing: border-box;
+    }
+      
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+        header {
+        background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+    
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px;
+          background: #ccc;
+          padding: 20px;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+    
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px;
+        }
+    
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+    
+        @media (max-width: 600px) {
+    
+          nav,
+          article {
+            width: 100%;
+            height: auto;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+      <h2>html 문서</h2>
+      <p>시멘틱 태그로 header, main, footer로 나누고 main에 aside로 세로 메뉴를 사용한 방식 </p>
+      <p>반응형 웹을 적용함</p>
+    
+      <header>
+        <h2>스마트웹&콘텐츠개발 505호</h2>
+      </header>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+          </ul>
+        </nav>
+        <article>
+          <h1>메뉴 1 내용</h1>
+          <p>입력하고 싶은 내용 아무것이나 넣기 ㅎㅎㅎ</p>
+          <p>ㅎㅎㅎㅎㅎㅎㅎ</p>
+        </article>
+      </section>
+      <footer>
+        <p>Footer</p>
+        <p>made by smart web 505</p>
+      </footer>
+    </body>
+    
+    </html>
